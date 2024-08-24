@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Memory game</title>
+</head>
+
+<body>
+
+    <div class="pregame">
+        <h1>Memory game</h1>
+        <div class="tileSelect">
+            <h2>How many tiles would you like to play with?</h4>
+                <div class="tileOptions">
+                    <div class="tiles">2</div>
+                    <div class="tiles">4</div>
+                    <div class="tiles">6</div>
+                    <div class="tiles">8</div>
+                    <div class="tiles">10</div>
+                    <div class="tiles">12</div>
+                    <div class="tiles">14</div>
+                    <div class="tiles">16</div>
+                    <div class="tiles">18</div>
+                    <div class="tiles">20</div>
+                </div>
+        </div>
+    </div>
+
+    <h1>Memory game</h1>
+    <div class="controls">
+        <button class="restart">Restart game</button>
+        <div>Number of tiles: <span class="tileNo">0</span></div>
+        <div>High score: <span class="highScoreDisplay">N/A</span></div>
+        <div class="clock">Time taken: <span class="time">00:00</span></div>
+        <div>Moves: <span class="moves">0</span></div>
+    </div>
+
+    <div class="congratulations hidden">
+        <h2>CONGRATULATIONS!!</h2>
+        <h6>You finished the game in <span class="winningMoves">0 moves</span> and a time of <span
+                class="winningTime">00:00</span>!</h6>
+        <h6>High score: <span class="highScoreCongrats">N/A</span></h6>
+        <h6>Fastest time: <span class="fastestTimeCongrats">N/A</span></h6>
+        <button class="restart">Play again</button>
+    </div>
+
+    <div class="container">
+    </div>
+</body>
+
+</html>

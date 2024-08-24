@@ -1,0 +1,132 @@
+body,
+h1,
+h2,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #f8f8f8;
+}
+
+.pregame {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    background-color: #f8f8f8;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px;
+}
+
+.tileSelect {
+    width: 100%;
+    /* background-color: lightgray; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.tileOptions {
+    display: flex;
+    gap: 10px;
+}
+
+.tileOptions div {
+    background-color: white;
+    padding: 3px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid goldenrod;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tileOptions div:hover {
+    color: white;
+    background-color: goldenrod;
+}
+
+.controls {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-bottom: 10px; */
+    gap: 5px;
+}
+
+.congratulations {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    z-index: 1;
+    color: goldenrod;
+    background-color: #f8f8f8;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container {
+    /* display: grid; */
+    gap: 10px;
+    /* grid-template-columns: repeat(4, 1fr); */
+    justify-self: center;
+    width: 440px;
+    /* background-color: lightgray; */
+    padding: 30px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.square {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ccd5ae;
+    grid-column: span 1;
+    justify-self: center;
+    position: relative;
+    font-size: 2rem;
+    color: #1b263b;
+    border-radius: 10px;
+}
+
+.cover {
+    position: absolute;
+    height: inherit;
+    width: inherit;
+    background-color: #2a9d8f;
+    /* opacity: 30%; */
+    border-radius: 10px;
+}
+
+.cover:hover {
+    background-color: #52b788;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: none;
+}
